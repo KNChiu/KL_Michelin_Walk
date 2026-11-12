@@ -1,0 +1,1 @@
+Bun.serve({port:8767, async fetch(req){const p=new URL(req.url).pathname; const f=p==="/"?"index.html":p.slice(1); const file=Bun.file(f); if(await file.exists()) return new Response(file); return new Response("not found",{status:404});}});
