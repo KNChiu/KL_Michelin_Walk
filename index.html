@@ -175,7 +175,7 @@ section{padding:clamp(3rem,8vh,5.5rem) clamp(1rem,4vw,3rem)}
 }
 .zone-chip{
   font-size:.75rem;letter-spacing:.06em;border:1px solid var(--ink);
-  padding:.4rem .9rem;color:var(--ink);white-space:nowrap;
+  padding:.4rem .9rem;color:var(--ink);
 }
 
 /* ---------- printed map ---------- */
@@ -246,7 +246,7 @@ section{padding:clamp(3rem,8vh,5.5rem) clamp(1rem,4vw,3rem)}
 .stop .left .maplink{margin-top:.4rem}
 
 /* ---------- compact cards ---------- */
-.mini-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(310px,1fr));gap:1.2rem;margin-bottom:1.5rem}
+.mini-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(310px,100%),1fr));gap:1.2rem;margin-bottom:1.5rem}
 .mini{
   position:relative;background:var(--paper);border:1px solid var(--ink);
   padding:1.3rem 1.2rem;display:flex;flex-direction:column;gap:.4rem;
